@@ -16,7 +16,7 @@ export const App = () => {
     const parsedContacts = JSON.parse(contacts);
 
     if (parsedContacts) {
-      setContacts(contacts => contacts = parsedContacts);
+      setContacts(parsedContacts);
     }
   }, []);
 

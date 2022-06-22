@@ -11,19 +11,19 @@ import s from './ContactForm.module.css';
   const handleInputNameChange = e => {
     const { value } = e.currentTarget;
     
-      setName(name => name = value);
+      setName(value);
     };
 
   const handleInputNumberChange = e => {
     const {value } = e.currentTarget;
-    setNumber(number => number = value)
+    setNumber( value)
   };
 
   const handleSubmit = e => {
     e.preventDefault();
     onSubmit({name, number});
-    setName(name => name = '');
-    setNumber(number => number = '')
+    setName('');
+    setNumber('')
   };
 
   
